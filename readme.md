@@ -33,29 +33,29 @@
 ### 1. Go to: 
     cd /var/www
 ### 2. Create document to serve: Create a new directory and then create an index.html file that contains the code below:
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2420</title>
-    <style>
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-           height: 100vh;
-            margin: 0;
-        }
-        h1 {
-            text-align: center;
-        }
-    </style>
- </head>
- <body>
-    <h1>Hello, World</h1>
- </body>
- </html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2420</title>
+        <style>
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+            }
+            h1 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello, World</h1>
+    </body>
+    </html>
 
 ### 3. Open Nginx server block configuration file: 
     sudo vim /etc/nginx/sites-available/default
