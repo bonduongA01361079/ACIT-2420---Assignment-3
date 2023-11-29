@@ -60,24 +60,24 @@
 ### 3. Open Nginx server block configuration file: 
     sudo vim /etc/nginx/sites-available/default
 ### 4. Scroll all the way down and uncomment those lines:
- server {
-	listen 80 default_server;
-	listen [::]:80 default_server;
+    server {
+	    listen 80 default_server;
+	    listen [::]:80 default_server;
 	
-	root /var/www/html;
+	    root /var/www/html;
 	
-	index index.html index.htm index.nginx-debian.html;
+	    index index.html index.htm index.nginx-debian.html;
 	
-	server_name _;
+	    server_name _;
 	
-	location / {
-		# First attempt to serve request as file, then
-		# as directory, then fall back to displaying a 404.
-		try_files $uri $uri/ =404;
-	}
- }
+	    location / {
+		    # First attempt to serve request as file, then
+		    # as directory, then fall back to displaying a 404.
+		    try_files $uri $uri/ =404;
+	    }
+    }
 
-### 5. Save and exit the file
+### 5. Save and exit the file.
 ### 6. Test Nginx configuration file:
     sudo nginx -t
  
