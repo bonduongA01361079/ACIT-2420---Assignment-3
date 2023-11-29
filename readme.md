@@ -3,9 +3,8 @@
 ## Step 1: Starting from a Fresh Debian 12 server on DigitalOcean
 ### 1. Create new droplet on DigitalOcean, copy the IP address of the new droplet
 ### 2. Login to your server as the root user using the command: 
-    ```bash
     ssh -i ~/.ssh/do-key root@your-server-ip-address 
-    ```
+    
     
 
 
